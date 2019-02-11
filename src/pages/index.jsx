@@ -181,9 +181,13 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            <form name="contact" method="POST" data-netlify="true">
+              <label>Name<br/></label>
+              <input type="text" name="name" />
+              <label>Message<br/></label>
+              <textarea name="message"></textarea>
+              <button type="submit">Send</button>
+            </form>
           </ContactText>
         </Inner>
         <Footer>
